@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigClientApplication {
     /*
      * http://localhost:8881/actuator/bus-refresh ,post请求之后,需要修改idea 下的target项目中的配置文件才有效,会自动刷新配置,因为@RefreshScope
+     * 之所以必须为post 防止csrf问题 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security-csrf
      */
 
     public static void main(String[] args) {
