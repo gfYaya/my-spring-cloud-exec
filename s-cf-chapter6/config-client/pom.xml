@@ -46,12 +46,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <!--
+
+        <!-- 如果没有rabbitMQ 无法动态刷新 @RefreshScope  但是网上大多数博客 没用amqp 依然可以,暂时未排查出原因-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
-        -->
+
         <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-actuator</artifactId>
