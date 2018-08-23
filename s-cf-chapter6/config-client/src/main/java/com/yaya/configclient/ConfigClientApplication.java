@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableDiscoveryClient
+@EnableDiscoveryClient //去掉对结果没有任何影响
 @RefreshScope // A Scope implementation that allows for beans to be refreshed dynamically at runtime (see refresh(String) and refreshAll()).
 @RestController
 public class ConfigClientApplication {

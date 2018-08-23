@@ -48,7 +48,7 @@
         </dependency>
 
         <!-- 如果没有rabbitMQ 无法动态刷新 @RefreshScope  但是网上大多数博客 没用amqp 依然可以,暂时未排查出原因.
-            另一个严重问题就是,@RefreshScope 明明是spring cloud config中的 为什么都需要使用actuator?  -->
+            而且,按照官方提供的demo https://github.com/spring-guides/gs-centralized-configuration经过测试,未使用amqp和eureka是依然有效的  -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
